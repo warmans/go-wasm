@@ -8,4 +8,4 @@ build.example.%:
 .PHONY: run.example.%
 run.example.%:
 	$(MAKE) build.example.$*
-	go run cmd/server/main.go -wasm-file=bin/$*.wasm
+	go run cmd/server/main.go -wasm-file=bin/$*.wasm -port=3000
